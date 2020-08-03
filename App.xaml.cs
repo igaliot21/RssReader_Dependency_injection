@@ -17,7 +17,7 @@ namespace RssReader
     {
         public App()
         {
-            DependecyInjector.Register<IRssHelper, RssHelper>();
+            DependecyInjector.Register<IRssHelper, FakeRssHelper>();
             MainWindow = DependecyInjector.Retrieve<MainWindow>();
             MainWindow.Show();
         }
